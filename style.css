@@ -38,6 +38,14 @@ body {
   margin-bottom: 16px;
 }
 
+.logo-img {
+  width: 240px;
+  height: auto;
+  margin: 0 auto 16px;
+  display: block;
+  border-radius: 12px;
+}
+
 .hero h1, .hero h2 {
   font-size: 24px;
   font-weight: 800;
