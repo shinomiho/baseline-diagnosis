@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>強み・適性診断｜BASELINE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="form-screen">
+    <div class="hero">
+      <div class="brand">BASELINE</div>
+      <h1>強み・適性診断</h1>
+      <p class="hero-sub">あなたの強みと理想のビジネスジャンルを<br>AIが分析します</p>
+      <p class="hero-time">所要時間：約3分 ／ 全10問</p>
+    </div>
+
+    <div class="container">
+      <form id="diagnosis-form">
+        <div class="profile-fields">
+          <div class="profile-row">
+            <div class="profile-item">
+              <label for="user-name">お名前（ニックネームOK）</label>
+              <input type="text" id="user-name" placeholder="例：みほ" required>
+            </div>
+            <div class="profile-item">
+              <label for="user-email">メールアドレス</label>
+              <input type="email" id="user-email" placeholder="例：miho@example.com" required>
+            </div>
+          </div>
+        </div>
+
+        <div id="questions-container"></div>
+
+        <div class="consent-box">
+          <label class="consent-label">
+            <input type="checkbox" id="consent-check">
+            <span class="consent-text">
+              入力情報はAI診断レポート生成のみに使用します。第三者への提供は行いません。
+            </span>
+          </label>
+        </div>
+
+        <button type="submit" class="submit-btn" id="submit-btn">
+          診断する →
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <div id="loading-screen" class="hidden">
+    <div class="loading-content">
+      <div class="spinner"></div>
+      <p>あなたの強みを分析中…</p>
+      <p class="loading-sub">AIがパーソナル診断を生成しています</p>
+    </div>
+  </div>
+
+  <div id="result-screen" class="hidden">
+    <div class="hero">
+      <div class="brand">BASELINE</div>
+      <h2 id="result-title">診断結果</h2>
+    </div>
+    <div class="container">
+      <div class="match-section">
+        <h3 class="section-label">マッチングスコア</h3>
+        <div id="match-bars"></div>
+      </div>
+
+      <div id="expert-card"></div>
+
+      <div class="ai-report">
+        <div class="report-label">あなたの強みパーソナル分析</div>
+        <div id="ai-report-content" class="report-content"></div>
+      </div>
+
+      <div id="cta-section"></div>
+
+      <button class="restart-btn" onclick="restart()">もう一度診断する</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
