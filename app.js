@@ -112,8 +112,8 @@ const EXPERTS = {
     desc: '医療業界15年。食事制限・激しい運動なしで体を変える「毒抜きダイエット」の専門家。20〜70代の幅広い年代に対応。家庭料理からできる実践的なアプローチで支持されています。',
     genre: '健康・ダイエット・ライフスタイル改善ビジネス',
     color: '#10B981',
-    lineUrl: '#LINE_SOVEREIGN',
-    consultUrl: '#CONSULT_SOVEREIGN',
+    lineUrl: 'https://lin.ee/xFj7ump',
+    consultUrl: 'https://lin.ee/xFj7ump',
   },
   M: {
     name: 'みほ',
@@ -121,8 +121,8 @@ const EXPERTS = {
     desc: 'ナレーター業・声スクール校長。20年以上の実践経験をもとに「声と心理」の両面からコミュニケーションを変える。SNS発信に悩む人を「直さずに整える」アプローチで支援。',
     genre: '声・発信・コミュニケーション改善ビジネス',
     color: '#8B5CF6',
-    lineUrl: '#LINE_MIHO',
-    consultUrl: '#CONSULT_MIHO',
+    lineUrl: 'https://s.lmes.jp/landing-qr/2002706907-7qPklxpo?uLand=eAfCaz',
+    consultUrl: 'https://s.lmes.jp/landing-qr/2002706907-7qPklxpo?uLand=eAfCaz',
   },
   SH: {
     name: 'しのみほ',
@@ -130,8 +130,8 @@ const EXPERTS = {
     desc: 'グローバルと日本のGAPを乗り越え、合理的に活躍できる人材育成の専門家。外資系企業での働き方に悩む人が、自分らしいスタイルで成果を出せるようサポート。',
     genre: 'キャリア・働き方・グローバルビジネス',
     color: '#F59E0B',
-    lineUrl: '#LINE_SHINOMIHO',
-    consultUrl: '#CONSULT_SHINOMIHO',
+    lineUrl: 'https://line.me/ti/g2/v3sAjhTjJmxfj4J947URRRyFYzIPW4rMO9Y4yQ?utm_source=invitation&utm_medium=link_copy&utm_campaign=default',
+    consultUrl: 'https://app.spirinc.com/t/BaVcJLzp1EBNlPmMopnQj/as/nEkvuC6zy3wU2bD10nCV0/confirm',
   },
 };
 
