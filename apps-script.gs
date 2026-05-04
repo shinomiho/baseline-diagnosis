@@ -15,7 +15,7 @@ function getConfig() {
     spreadsheetId: p.getProperty('SPREADSHEET_ID'),
     claudeApiKey:  p.getProperty('CLAUDE_API_KEY'),
     claudeModel:   'claude-sonnet-4-6',
-    adminEmail:    'miho.shinohe@remenow.com',
+    adminEmail:    'miho.shinohe@gmail.com',
   };
 }
 
@@ -24,20 +24,20 @@ const EXPERT_DATA = {
   S: {
     name: 'ソブリン',
     field: '健康・ダイエット・ライフスタイル改善ビジネス',
-    lineUrl: 'LINE_URL_SOVEREIGN',
-    consultUrl: 'CONSULT_URL_SOVEREIGN',
+    lineUrl: 'https://lin.ee/xFj7ump',
+    consultUrl: 'https://lin.ee/xFj7ump',
   },
   M: {
     name: 'みほ',
     field: '声・発信・コミュニケーション改善ビジネス',
-    lineUrl: 'LINE_URL_MIHO',
-    consultUrl: 'CONSULT_URL_MIHO',
+    lineUrl: 'https://s.lmes.jp/landing-qr/2002706907-7qPklxpo?uLand=eAfCaz',
+    consultUrl: 'https://s.lmes.jp/landing-qr/2002706907-7qPklxpo?uLand=eAfCaz',
   },
   SH: {
     name: 'しのみほ',
     field: 'キャリア・働き方・グローバルビジネス',
-    lineUrl: 'LINE_URL_SHINOMIHO',
-    consultUrl: 'CONSULT_URL_SHINOMIHO',
+    lineUrl: 'https://line.me/ti/g2/v3sAjhTjJmxfj4J947URRRyFYzIPW4rMO9Y4yQ?utm_source=invitation&utm_medium=link_copy&utm_campaign=default',
+    consultUrl: 'https://app.spirinc.com/t/BaVcJLzp1EBNlPmMopnQj/as/nEkvuC6zy3wU2bD10nCV0/confirm',
   },
 };
 
