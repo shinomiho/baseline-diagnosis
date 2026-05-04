@@ -5,102 +5,102 @@ const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwVJ8hefECLaNvE
 const QUESTIONS = [
   {
     id: 'Q01',
-    text: '今の生活・仕事で一番「変えたい」と感じていることは？',
+    text: '一番エネルギーが出るのはどんな状態のとき？',
     options: [
-      { label: 'A', text: '体の疲れ・体型・食習慣を整えたい',           scores: { S: 3, M: 0, SH: 0 } },
-      { label: 'B', text: 'もっと自分らしく話せるようになりたい',        scores: { S: 0, M: 3, SH: 0 } },
-      { label: 'C', text: '働き方・収入・キャリアをもっと合理的に変えたい', scores: { S: 0, M: 0, SH: 3 } },
-      { label: 'D', text: '全体的にバランスよく整えたい',                scores: { S: 1, M: 1, SH: 1 } },
+      { label: 'A', text: '体の調子がよく、食欲も睡眠も整っているとき',  scores: { S: 3, M: 1, SH: 0 } },
+      { label: 'B', text: '計画が明確で、迷いなく実行できているとき',    scores: { S: 0, M: 0, SH: 3 } },
+      { label: 'C', text: '誰かと話して、気持ちがすっきりしているとき',  scores: { S: 0, M: 2, SH: 0 } },
+      { label: 'D', text: '特に決まったパターンはない',                  scores: { S: 1, M: 1, SH: 1 } },
     ]
   },
   {
     id: 'Q02',
-    text: '自分の「得意」や「好き」に一番近いのは？',
+    text: '友人や知人から頼まれることが多いのは？',
     options: [
-      { label: 'A', text: '体・食事・健康・美容に関する知識や実体験', scores: { S: 3, M: 0, SH: 0 } },
-      { label: 'B', text: '話す・聴く・人の感情に寄り添う',          scores: { S: 0, M: 3, SH: 0 } },
-      { label: 'C', text: '分析・整理・仕組みをつくる・効率化する',   scores: { S: 0, M: 0, SH: 3 } },
-      { label: 'D', text: 'まだわからない',                         scores: { S: 1, M: 1, SH: 1 } },
+      { label: 'A', text: '話を聴いてほしい・悩みを相談したい',        scores: { S: 0, M: 3, SH: 0 } },
+      { label: 'B', text: '計画・段取り・問題の整理を一緒に考えてほしい', scores: { S: 0, M: 0, SH: 3 } },
+      { label: 'C', text: '食事・体・健康のことを相談したい',          scores: { S: 3, M: 0, SH: 0 } },
+      { label: 'D', text: '特に決まっていない',                        scores: { S: 1, M: 1, SH: 1 } },
     ]
   },
   {
     id: 'Q03',
-    text: '6ヶ月後の理想の自分は？',
+    text: 'やる気がなくなったとき、自分を取り戻す方法は？',
     options: [
-      { label: 'A', text: '健康的でエネルギーにあふれ、毎日が軽くなっている', scores: { S: 3, M: 0, SH: 0 } },
-      { label: 'B', text: '自分の言葉と声で、人の心を動かせている',          scores: { S: 0, M: 3, SH: 0 } },
-      { label: 'C', text: '収入・働き方が整い、合理的に成果を出せている',    scores: { S: 0, M: 0, SH: 3 } },
-      { label: 'D', text: 'まだイメージできていない',                        scores: { S: 1, M: 1, SH: 1 } },
+      { label: 'A', text: '問題の原因を分析して、解決策を立てる',  scores: { S: 0, M: 0, SH: 3 } },
+      { label: 'B', text: '体を動かしたり、食事や睡眠を整える',    scores: { S: 3, M: 0, SH: 0 } },
+      { label: 'C', text: '誰かに話す・日記に書く・言葉にする',    scores: { S: 0, M: 2, SH: 0 } },
+      { label: 'D', text: 'しばらく放置して自然に回復するのを待つ', scores: { S: 1, M: 1, SH: 0 } },
     ]
   },
   {
     id: 'Q04',
-    text: 'ビジネスや仕事で今一番困っていることは？',
+    text: '過去に「意外とできるじゃん」と感じた場面は？',
     options: [
-      { label: 'A', text: '体のコンディションが整わず、集中・継続できない', scores: { S: 3, M: 0, SH: 0 } },
-      { label: 'B', text: '発信・表現・コミュニケーションに自信がない',    scores: { S: 0, M: 3, SH: 0 } },
-      { label: 'C', text: '収益の仕組みや戦略が定まらない',              scores: { S: 0, M: 0, SH: 3 } },
-      { label: 'D', text: '全部少しずつ困っている',                      scores: { S: 1, M: 1, SH: 1 } },
+      { label: 'A', text: '声・言葉・表現で誰かの気持ちが動いたとき',     scores: { S: 0, M: 3, SH: 0 } },
+      { label: 'B', text: '体・食事・健康のアドバイスで誰かの生活が変わったとき', scores: { S: 3, M: 0, SH: 0 } },
+      { label: 'C', text: '論理的に説明・整理して、納得・成果につながったとき',   scores: { S: 0, M: 0, SH: 3 } },
+      { label: 'D', text: 'まだそういう経験があまりない',                  scores: { S: 1, M: 1, SH: 1 } },
     ]
   },
   {
     id: 'Q05',
-    text: '誰かから「ありがとう」と言われた経験で多いのは？',
+    text: '新しいことを学ぶとき、一番身になる方法は？',
     options: [
-      { label: 'A', text: '体・健康・食事のアドバイスで誰かの生活が変わった', scores: { S: 3, M: 0, SH: 0 } },
-      { label: 'B', text: '言葉や声で誰かの気持ちが楽になった',             scores: { S: 0, M: 3, SH: 0 } },
-      { label: 'C', text: '仕組みや考え方を整理して誰かの成果を上げた',     scores: { S: 0, M: 0, SH: 3 } },
-      { label: 'D', text: '特にない・まだわからない',                       scores: { S: 1, M: 1, SH: 1 } },
+      { label: 'A', text: 'データや理論を体系的に理解してから行動する', scores: { S: 0, M: 0, SH: 3 } },
+      { label: 'B', text: '体を使って・実生活の中で試しながら覚える',  scores: { S: 3, M: 0, SH: 0 } },
+      { label: 'C', text: '人と話したり、教えたりしながら深める',      scores: { S: 0, M: 3, SH: 0 } },
+      { label: 'D', text: 'とにかくやりながら感覚でつかんでいく',      scores: { S: 1, M: 1, SH: 1 } },
     ]
   },
   {
     id: 'Q06',
-    text: '自分のビジネスで「軸」にしたいのは？',
+    text: '「この人は信頼できる」と感じるのはどんな人？',
     options: [
-      { label: 'A', text: '健康・体・ライフスタイルの改善', scores: { S: 3, M: 0, SH: 0 } },
-      { label: 'B', text: '声・発信・コミュニケーション',  scores: { S: 0, M: 3, SH: 0 } },
-      { label: 'C', text: '合理性・仕組み化・収益構造',    scores: { S: 0, M: 0, SH: 3 } },
-      { label: 'D', text: 'まだ決まっていない',           scores: { S: 1, M: 1, SH: 1 } },
+      { label: 'A', text: '言葉が丁寧で、人の話をしっかり聴ける人',  scores: { S: 0, M: 3, SH: 0 } },
+      { label: 'B', text: '体や生活を大切にして、自己管理ができている人', scores: { S: 2, M: 0, SH: 0 } },
+      { label: 'C', text: '論理的で、根拠をもって話せる人',          scores: { S: 0, M: 0, SH: 3 } },
+      { label: 'D', text: '人柄・雰囲気で自然と惹かれる人',          scores: { S: 1, M: 2, SH: 0 } },
     ]
   },
   {
     id: 'Q07',
-    text: '今後、どんな人の力になりたい？',
+    text: '新しいチャレンジをするとき、背中を押してくれるのは？',
     options: [
-      { label: 'A', text: '健康や体・食事に悩んでいる人',             scores: { S: 3, M: 0, SH: 0 } },
-      { label: 'B', text: '発信・自己表現・コミュニケーションに課題がある人', scores: { S: 0, M: 3, SH: 0 } },
-      { label: 'C', text: 'ビジネスの仕組み化・収益化で行き詰まっている人',  scores: { S: 0, M: 0, SH: 3 } },
-      { label: 'D', text: 'まだわからない',                           scores: { S: 1, M: 1, SH: 1 } },
+      { label: 'A', text: '体が整っていて、気力・体力がある感覚',          scores: { S: 3, M: 0, SH: 0 } },
+      { label: 'B', text: '明確な数値目標・ロードマップが見えたとき',      scores: { S: 0, M: 0, SH: 3 } },
+      { label: 'C', text: '「あなたなら伝えられる・話せる」と言われたとき', scores: { S: 0, M: 3, SH: 0 } },
+      { label: 'D', text: '誰かと一緒に動ける環境があるとき',             scores: { S: 1, M: 1, SH: 0 } },
     ]
   },
   {
     id: 'Q08',
-    text: '行動するとき、自分に近いのは？',
+    text: '自分が「もっと伸ばしたい」と思うのは？',
     options: [
-      { label: 'A', text: '感覚・直感で動く、まずやってみるタイプ',       scores: { S: 2, M: 1, SH: 0 } },
-      { label: 'B', text: 'データや根拠・計画があると安心して動けるタイプ', scores: { S: 0, M: 0, SH: 3 } },
-      { label: 'C', text: '誰かと話しながら一緒に進めたいタイプ',         scores: { S: 0, M: 2, SH: 0 } },
-      { label: 'D', text: '状況によってバランスをとるタイプ',             scores: { S: 1, M: 1, SH: 1 } },
+      { label: 'A', text: '効率よく稼ぐ仕組み・ビジネス戦略の力', scores: { S: 0, M: 0, SH: 3 } },
+      { label: 'B', text: '伝える力・話す力・発信力',              scores: { S: 0, M: 3, SH: 0 } },
+      { label: 'C', text: '体力・健康・食事に関する知識と実践力',  scores: { S: 3, M: 0, SH: 0 } },
+      { label: 'D', text: 'まんべんなく全部',                     scores: { S: 1, M: 1, SH: 1 } },
     ]
   },
   {
     id: 'Q09',
-    text: '情報発信について、今の正直な気持ちは？',
+    text: '理想の働き方に一番近いのは？',
     options: [
-      { label: 'A', text: '発信より先に体と生活を整えることが必要',     scores: { S: 2, M: 0, SH: 0 } },
-      { label: 'B', text: '声・顔出し・発信力をもっと伸ばしたい',       scores: { S: 0, M: 3, SH: 0 } },
-      { label: 'C', text: '発信より仕組みやバックエンドを先に整えたい', scores: { S: 0, M: 0, SH: 2 } },
-      { label: 'D', text: '全部やりたいが何から始めればいいかわからない', scores: { S: 1, M: 1, SH: 1 } },
+      { label: 'A', text: '声・言葉・発信を通じて、人とつながれる働き方',   scores: { S: 0, M: 3, SH: 0 } },
+      { label: 'B', text: '体のリズムに合わせて、無理なく続けられる働き方', scores: { S: 3, M: 1, SH: 0 } },
+      { label: 'C', text: '仕組み化されて、時間と収益を最適化できる働き方', scores: { S: 0, M: 0, SH: 3 } },
+      { label: 'D', text: 'まだ具体的なイメージがない',                    scores: { S: 1, M: 1, SH: 1 } },
     ]
   },
   {
     id: 'Q10',
-    text: 'ビジネスで一番大切にしたいのは？',
+    text: '10年後、どんな自分でいたい？',
     options: [
-      { label: 'A', text: '健康を土台に、無理なく長く続けること',   scores: { S: 3, M: 0, SH: 0 } },
-      { label: 'B', text: '人との深いつながりと、感謝される喜び',   scores: { S: 0, M: 3, SH: 0 } },
-      { label: 'C', text: '効率・論理・合理性で確実に結果を出すこと', scores: { S: 0, M: 0, SH: 3 } },
-      { label: 'D', text: '全部をバランスよく実現すること',         scores: { S: 1, M: 1, SH: 1 } },
+      { label: 'A', text: '合理的に稼ぎ、自由な時間をコントロールしている', scores: { S: 0, M: 0, SH: 3 } },
+      { label: 'B', text: '心も体も健康で、長く元気にビジネスを続けている', scores: { S: 3, M: 1, SH: 0 } },
+      { label: 'C', text: '自分の言葉で多くの人に影響を与えられている',    scores: { S: 0, M: 3, SH: 1 } },
+      { label: 'D', text: '具体的なイメージはまだない',                    scores: { S: 1, M: 1, SH: 1 } },
     ]
   },
 ];
